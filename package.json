@@ -1,20 +1,20 @@
 {
-	"name": "logos-vscode",
+	"name": "llvm-logos-vscode",
 	"version": "1.0.0",
-	"publisher": "tale",
+	"publisher": "cxnder",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
 	"license": "MIT",
-	"displayName": "Logos for VS Code",
-	"description": "Syntax and rich editor support for Logos in VS Code",
+	"displayName": "LLVM-Logos Language Support",
+	"description": "LLVM-Logos basic language support for VSCode. For advanced language features, use the clangd plugin in conjunction with LLVM-Logos. This plugin is modified from https://github.com/tale/logos-vscode.git",
 	"categories": [
 		"Programming Languages",
 		"Snippets"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tale/logos-vscode.git"
+		"url": "https://github.com/DragonBuild/llvm-logos-vscode.git"
 	},
 	"keywords": [
 		"objective-c",
@@ -52,6 +52,23 @@
 					"dark": "./assets/logos.svg",
 					"light": "./assets/logos.svg"
 				}
+			},
+			{
+				"id": "objective-c",
+				"aliases": [
+					"Objective-C",
+					"llvm-logos",
+					"LLVM-Logos"
+				],
+				"extensions": [
+					".m",
+					".mm"
+				],
+				"configuration": "./assets/llvm-language-configuration.json",
+				"icon": {
+					"dark": "./assets/logos.svg",
+					"light": "./assets/logos.svg"
+				}
 			}
 		],
 		"grammars": [
@@ -59,6 +76,11 @@
 				"language": "logos",
 				"scopeName": "source.logos",
 				"path": "./assets/logos.tmLanguage.json"
+			},
+			{
+				"language": "Objective-C",
+				"scopeName": "source.llvm-logos",
+				"path": "./assets/llvm-logos.tmLanguage.json"
 			}
 		]
 	},

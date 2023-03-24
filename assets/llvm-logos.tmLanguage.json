@@ -7,7 +7,7 @@
 	"patterns": [
 		{
 			"match": "@(init|hookf|hook|subclass|group|class|new|ctor|dtor|end|config|orig|log|property|c)",
-			"name": "keyword.source.llvm-logos"
+			"name": "keyword.source.objc"
 		},
 		{
 			"match": "@hook *"
@@ -15,7 +15,7 @@
 		{
 			"captures": {
 				"1": {
-					"name": "keyword.source.llvm-logos"
+					"name": "keyword.source.objc"
 				}
 			},
 			"match": "@c([A-Za-z$_]+)"

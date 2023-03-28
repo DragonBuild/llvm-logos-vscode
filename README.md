@@ -1,1 +1,1 @@
-Syntax and rich editor support for llvm-logos in VS Code. Modified from Aarnav Tale's "logos-vscode" plugin to additionally support llvm-logos syntax
+Syntax and rich editor support for ObjectiveCS in VS Code. Modified from Aarnav Tale's "logos-vscode" plugin to additionally support ObjectiveCS syntax
